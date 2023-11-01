@@ -6,10 +6,10 @@ import React from 'react'
  * @returns 
  */
 
-export  function Currency(currency) {
+export  function Currency({currency}) {
   return (
-    <div>
-        {currency.titlt} {currency.valuu} {currency.shift}
-    </div>
+    <span>
+        {currency.title} {currency.value} {currency.shift}
+    </span>
   )
 }

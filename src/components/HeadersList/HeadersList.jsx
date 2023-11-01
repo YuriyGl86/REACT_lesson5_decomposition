@@ -6,12 +6,14 @@ import { NewsHeader } from "../NewsHeader/NewsHeader"
  * @param {object[]} list Массив объектов, содержащих заголовок, ссылку на новость, ссылку на иконку источника новости.
  * @returns 
  */
-export  function HeadersList(list) {
+export  function HeadersList({list}) {
   return (
-    <>
+    <ul className="headers-list">
         {list.map(header => (
         <NewsHeader item={header}/>
         ))}
-    </>
+      
+    </ul>
+    
   )
 }

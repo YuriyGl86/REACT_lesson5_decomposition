@@ -4,11 +4,13 @@
  * @returns 
  */
 
-export  function NewsHeader(item) {
+export  function NewsHeader({item}) {
   return (
-    <>
+    <li>
         <img src={item.src} alt="" />
         <a href={item.href}>{item.title}</a>
-    </>
+
+    </li>
+    
   )
 }

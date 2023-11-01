@@ -6,12 +6,12 @@ import { Currency } from "../Currency/Currency"
  * @param {*} currencies массив объектов с названиями валют, текущим курсом
  * @returns 
  */
-export  function CurrencyRates(currencies) {
+export  function CurrencyRates({currencies}) {
   return (
     <div>
-        {currencies.map(currency => {
-            {<Currency currency={currency}/>}
-        })}
+        {currencies.map(currency => (
+            <Currency currency={currency}/>
+        ))}
     </div>
   )
 }
