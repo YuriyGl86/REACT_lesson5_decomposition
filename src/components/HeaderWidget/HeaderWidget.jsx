@@ -10,7 +10,9 @@ export  function HeaderWidget({headerWidget}) {
   return (
     <>
         <img src={img} alt="" className="header-img"/>
-        <Widget title={title} text={text}></Widget>
+        <Widget title={title}>
+          <p>{text}</p>
+        </Widget>
     </>
   )
 }

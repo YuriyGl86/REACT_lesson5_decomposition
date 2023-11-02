@@ -4,11 +4,10 @@
  * @param {*} param0 
  * @returns 
  */
-export  function Widget({title, text, children}) {
+export  function Widget({title, children}) {
   return (
     <div className="widget">
         <h3>{title}</h3>
-        <p>{text}</p>
         {children}
     </div>
   )
