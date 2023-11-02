@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .container {
   width: 1000px;
 }
@@ -13,4 +17,29 @@
 
 .headers-list {
   display: block;
+}
+
+.header-widget {
+  width:300px;
+  border: 1px solid black;
+}
+
+.header-img {
+  height: 60px;
+}
+
+.widget {
+  padding: 5px;
+}
+
+.search-container {
+  width: 100%;
+  border: 1px solid black;
+  height: 100px;
+  display: flex;
+}
+
+.service-item {
+  display: inline;
+  margin-right: 15px;
 }
